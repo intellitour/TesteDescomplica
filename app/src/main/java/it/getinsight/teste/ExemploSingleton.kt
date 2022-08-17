@@ -10,10 +10,17 @@ class ExemploSingleton {
 
     object SingletonPuro {
 
-        private const val number = 10
+        private var number = 10
 
         fun printNumber() {
             Log.d(tag, "O número é $number")
+        }
+
+        /**
+         * @deprecated esse código representa abuso do Singleton!
+         */
+        fun update(newNumber: Int) {
+            number = newNumber
         }
 
     }

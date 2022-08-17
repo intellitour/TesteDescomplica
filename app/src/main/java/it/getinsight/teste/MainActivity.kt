@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
     private fun onBuilder(button: View) {
         button.isEnabled = false
         AlertDialog.Builder(this)
-            .setTitle("Design Patterns")
             .setMessage("Este é o Builder!")
+            .setTitle("Design Patterns")
             .setPositiveButton("OK") { dialogInterface, _ ->
                 dialogInterface.dismiss()
                 button.isEnabled = true
